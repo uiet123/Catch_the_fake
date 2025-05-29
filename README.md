@@ -9,22 +9,24 @@ After development and testing, the project was built using the Vite build tool a
 
 # Overview of the application architecture.
 src/
-assets/                 # Icons, images, backgrounds
-components/             # All game components and screens
-GamePage.jsx            # Main game logic and swiping
-GameOver.jsx            # Final score page
-CorrectFeedback.jsx     # Tick feedback on correct swipe
-WrongFeedback.jsx       # Cross feedback on wrong swipe
-LeaderBoard.jsx         # High score screen
-LoadingPage.jsx         # Initial loading animation
-HomePage.jsx            # Landing/start page
-Login.jsx               # Login form
-Register.jsx            # Register form
-Navbar.jsx              # Navigation bar
-PrivateRoute.jsx        # Route guard for auth
-ContextAPI.jsx          # Game & Auth state (using Context API)
-styles/                 # CSS files for each component
-data/                   # Mock data
-utils/                  # firebaseUtils.js 
-App.jsx                 # Main App component with routes
-main.jsx                # React DOM entry point
+assets/ # Icons, images, backgrounds
+components/ # All game components and screens
+GamePage.jsx # Main game logic and swiping
+GameOver.jsx # Final score page
+CorrectFeedback.jsx # Tick feedback on correct swipe
+WrongFeedback.jsx # Cross feedback on wrong swipe
+LeaderBoard.jsx # High score screen
+LoadingPage.jsx # Initial loading animation
+HomePage.jsx # Landing/start page
+Login.jsx # Login form
+Register.jsx # Register form
+Navbar.jsx # Navigation bar
+PrivateRoute.jsx # Route guard for auth
+store/
+ContextAPI.jsx # Game & Auth state (Context API)
+styles/ # CSS for each component
+data/ # Mock data
+utils/
+firebaseUtils.js # Firebase config & helpers
+App.jsx # Main App component with routes
+main.jsx # React DOM entry point
