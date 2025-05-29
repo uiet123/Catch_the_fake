@@ -1,0 +1,48 @@
+.feedback-wrapper-red {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message-card-red {
+  position: relative;
+  background: #fff;
+  padding: 150px 50px;
+  border-radius: 16px;
+  width: 370px;
+  max-width: 90%;
+  box-shadow: 0 0 60px 20px rgba(255, 47, 47, 0.72); 
+  animation: glow-red-pulse 3s infinite ease-in-out;
+}
+.fraud-msg-icon {
+  position: absolute;
+  bottom: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 200px;
+  width: 350px;
+}
+
+@keyframes glow-red-pulse {
+  0%, 100% {
+    box-shadow: 0 0 60px 20px rgba(255, 47, 47, 0.72);
+  }
+  50% {
+    box-shadow: 0 0 80px 30px rgba(255, 47, 47, 0.32);
+  }
+}
+@media (max-width:400px) {
+    .message-card-red{
+        height: 200px;
+        width: 250px;
+        padding: 70px 30px;
+    }
+}

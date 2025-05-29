@@ -1,0 +1,187 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: url("../assets/Background2.png") center/cover no-repeat;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  width: 700px;
+  padding: 40px;
+  background: rgba(17, 2, 42, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.form-title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.single-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.double-input-group {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.double-input-group .input-group {
+  width: 50%;
+}
+
+.input-group label {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.single-input label{
+     color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.input-group input {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+  width: 100%;
+}
+.single-input input{
+      padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+  width: 48%;
+}
+
+.input-group input::placeholder, .single-input input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.continue-register-button {
+      background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(17, 2, 42, 0.4) 0%,
+    rgba(10, 12, 62, 0.4) 100%
+  );
+  
+  border: 1.35px solid #EBF4FF;
+  border-radius: 8px;
+  backdrop-filter: blur(5.41px);
+  -webkit-backdrop-filter: blur(5.41px);
+  box-shadow: 13.53px 5.41px 7.17px 0 rgba(0, 0, 0, 0.25);
+  color: #EBF4FF;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px 80px;
+  height: 48px; 
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.continue-register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@media (max-width: 768px) {
+  .register-form {
+    width: 90%;
+    padding: 20px;
+    margin-top: 60px;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .double-input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .double-input-group .input-group {
+    width: 100%;
+  }
+
+  .single-input input {
+    width: 100%;
+  }
+
+  .continue-register-button {
+    width: 60%;
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+    form {
+  gap: 10px;
+}
+}
+
+@media (max-width: 480px) {
+   
+  .form-title {
+    font-size: 1.3rem;
+  }
+
+  .input-group input,
+  .single-input input {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .continue-register-button {
+    width: 60%;
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  form {
+  gap: 15px;
+}
+}
+
